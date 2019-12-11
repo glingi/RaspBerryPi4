@@ -40,7 +40,7 @@ static domain_name_servers=xxx.xxx.xxx.xxx
 ```
 
 
-## 4. Network status confirm
+## 4. Check network connection status
 ```
 $ iwconfig
 $ ifconfig
