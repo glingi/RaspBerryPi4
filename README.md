@@ -1,1 +1,38 @@
 # RaspBerryPi4
+
+How to set static IP for wlan
+
+## Set dhcpcd.conf
+```
+$ sudo nano /etc/dhcpcd.conf
+
+#Add below codes at the end of file
+
+# wire LAN
+interface eth0
+static ip_address=xxx.xxx.xxx.xxx
+static routers=xxx.xxx.xxx.xxx
+static domain_name_servers=xxx.xxx.xxx.xxx
+
+# WiFi
+interface wlan0
+static ip_address=xxx.xxx.xxx.xxx
+static routers=xxx.xxx.xxx.xxx
+static domain_name_servers=xxx.xxx.xxx.xxx
+```
+
+## Set wpa_supplicant.conf
+```
+$ sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+
+network={
+    ssid="your-networks-SSID"
+    psk="your-networks-password"
+    scan_ssid=1 # option for hidden network
+}
+
+```
+
+## Reference
+[1] https://electrondust.com/2017/11/25/setting-raspberry-pi-wifi-static-ip-raspbian-stretch-lite/
+[2] https://webnautes.tistory.com/903
