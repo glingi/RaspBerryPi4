@@ -52,3 +52,7 @@ $ ifconfig
 [1] https://electrondust.com/2017/11/25/setting-raspberry-pi-wifi-static-ip-raspbian-stretch-lite/
 
 [2] https://webnautes.tistory.com/903
+
+# Pi monitoring
+
+https://github.com/XavierBerger/RPi-Monitor
