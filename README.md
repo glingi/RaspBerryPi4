@@ -53,6 +53,13 @@ $ ifconfig
 
 [2] https://webnautes.tistory.com/903
 
+
+
 # Pi monitoring
 
 https://github.com/XavierBerger/RPi-Monitor
+
+
+# The internet sharing from WiFi to ethernet port
+
+https://raspberrypi.stackexchange.com/questions/48307/sharing-the-pis-wifi-connection-through-the-ethernet-port
